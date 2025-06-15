@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
         fs.mkdirSync(path.join(__dirname, 'files'));
     }
 
-    // Create file
+    // to create file
     if (pathname === '/create' && req.method === 'GET') {
         if (!query.filename || !query.content) {
             res.writeHead(400, { 'Content-Type': 'text/plain' });
@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
         });
     }
 
-    // Read file
+    // to read file
     else if (pathname === '/read' && req.method === 'GET') {
         if (!query.filename) {
             res.writeHead(400, { 'Content-Type': 'text/plain' });
@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
         });
     }
 
-    // Delete file
+    // to delete file
     else if (pathname === '/delete' && req.method === 'GET') {
         if (!query.filename) {
             res.writeHead(400, { 'Content-Type': 'text/plain' });
