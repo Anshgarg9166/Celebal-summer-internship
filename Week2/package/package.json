@@ -1,0 +1,22 @@
+{
+  "name": "say-hello-function-by-ansh",
+  "version": "0.0.3",
+  "description": "just a test package",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "tpyes": "./dist/index.d.ts",
+  "homepage":"https://google.com",
+  "repository": {"url":"https://github.com/Anshgarg9166"},
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "ansh_garg",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
