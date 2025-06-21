@@ -80,3 +80,16 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}/`);
 });
+
+
+//To create a file 
+//http://localhost:3000/create?filename=note.txt&content=HelloWorld
+
+
+// to Read a file path is 
+//http://localhost:3000/read?filename=note.txt
+
+// to delete a file
+//http://localhost:3000/delete?filename=note.txt
+
+
