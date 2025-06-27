@@ -11,3 +11,8 @@ const recordVideoThree = new Promise((resolve,reject)=>{
 Promise.all([recordVideoOne,recordVideoTwo,recordVideoThree]).then((message)=>{
     console.log(message)
 })
+
+//Runs all but givew fastest one as answer
+// Promise.race([recordVideoOne,recordVideoTwo,recordVideoThree]).then((message)=>{
+//     console.log(message)
+// })
