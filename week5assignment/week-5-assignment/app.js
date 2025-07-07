@@ -1,11 +1,18 @@
 //To get all the aliens
 //GET : http://localhost:9000/aliens 
+
 //To get a single alien 
 //GET : http://localhost:9000/aliens/<id>
+
 //To make a new alien
 //POST: http://localhost:9000/aliens
+
 //to update an alien
 //PATCH: http://localhost:9000/aliens/<id>
+
+//to delete an alien 
+//DELETE: http://localhost:9000/aliens/<id>
+
 
 
 const express = require('express');

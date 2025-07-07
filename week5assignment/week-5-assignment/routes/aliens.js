@@ -2,7 +2,7 @@ const express = require('express');
 const Alien = require('../models/alien')
 const router = express.Router();
 
-
+//this route is for getting all the entry at once 
 router.get('/',async(req,res)=>{
     try{
         const aliens = await Alien.find();
@@ -12,6 +12,7 @@ router.get('/',async(req,res)=>{
     }
 })
 
+//this route is for getting single route from database by id
 router.get('/:id',async(req,res)=>{
     try{
         const alien = await Alien.findById(req.params.id);
@@ -21,13 +22,13 @@ router.get('/:id',async(req,res)=>{
     }
 })
 
+//this is make a new entry in database  
 router.post('/',async(req,res)=>{
     const alien = new Alien({
         name:req.body.name,
         tech:req.body.tech,
         sub:req.body.sub
     })
-
     try{
         const a1 = await Alien.insertOne(alien)
         res.json(a1);
@@ -36,6 +37,7 @@ router.post('/',async(req,res)=>{
     }
 })
 
+//this is for updating the entry in database
 router.patch('/:id',async (req,res)=>{
     try{
         const alien = await Alien.findById(req.params.id);
@@ -46,6 +48,8 @@ router.patch('/:id',async (req,res)=>{
         console.log(err)
     }
 })
+
+// this is for deleting an entry from mongodb 
 router.delete('/:id', async (req, res) => {
     try {
         const result = await Alien.findByIdAndDelete(req.params.id);
