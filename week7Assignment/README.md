@@ -130,11 +130,11 @@ Authorization: Bearer your.jwt.token
 
 | Method | Endpoint         | Description       |
 | ------ | ---------------- | ----------------- |
-| GET    | `/api/users`     | Get all users     |
-| GET    | `/api/users/:id` | Get user by ID    |
-| POST   | `/api/users`     | Create new user   |
-| PUT    | `/api/users/:id` | Update user by ID |
-| DELETE | `/api/users/:id` | Delete user by ID |
+| GET    | `/api/user`     | Get all users     |
+| GET    | `/api/user/:id` | Get user by ID    |
+| POST   | `/api/user`     | Create new user   |
+| PUT    | `/api/user/:id` | Update user by ID |
+| DELETE | `/api/user/:id` | Delete user by ID |
 
 > All routes require a valid JWT in the `Authorization` header.
 
@@ -147,7 +147,7 @@ Authorization: Bearer your.jwt.token
    ```
    Bearer your.jwt.token
    ```
-3. Call any `/api/users` endpoint with the token.
+3. Call any `/api/user` endpoint with the token.
 
 ---
 
