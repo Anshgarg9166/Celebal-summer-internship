@@ -66,7 +66,7 @@ Server should start at: [http://localhost:5000](http://localhost:5000)
 
 ## API Authentication
 
-All endpoints under `/api/users` are **protected** and require a valid **JWT token**.
+All endpoints under `/api/user` are **protected** and require a valid **JWT token**.
 
 ---
 
